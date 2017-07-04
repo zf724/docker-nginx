@@ -10,3 +10,5 @@ if [ ! -d "/data/html" ];then
   mv /usr/share/nginx/html /data/
   ln -s /data/html /usr/share/nginx/html
 fi
+
+nginx -g 'daemon off;'
