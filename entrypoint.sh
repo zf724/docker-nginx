@@ -11,4 +11,4 @@ if [ ! -d "/data/html" ];then
   ln -s /data/html /usr/share/nginx/html
 fi
 
-nginx -g 'daemon off;'
+exec nginx -g 'daemon off;'
